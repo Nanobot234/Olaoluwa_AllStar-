@@ -15,19 +15,48 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Food "
+        android:text="Welcome to Foodify"
         android:textColor="#a72828"
         android:id="@+id/textView"
         android:textSize="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="false" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your name "
+        android:textColor="#FF8800"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView8"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Find food"
-        android:id="@+id/button"
-        android:layout_marginTop="103dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:text="Continue"
+        android:id="@+id/But1"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+
 </RelativeLayout>

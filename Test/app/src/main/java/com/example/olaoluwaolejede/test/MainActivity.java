@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -28,7 +29,23 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        //When button is clicked
+
+        final Button contBtn = (Button) findViewById(R.id.But1);
+
+        contBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                //contBtn.setText("Clicked");
+                //Intent intent = new Intent(MainActivity.this, HelpActivity.class);
+              //  MainActivity.this.startActivity(intent);
+            }
+
+        });
+
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -47,11 +64,6 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
 
         //If settings button clicked, starts settings activity (page)
-        if(id == R.id.action_settings){
-            Intent intent = new Intent(this, SettingsActivity.class);
-            startActivity(intent);
-            return true;
-        }
 
         if(id == R.id.action_profile){
             Intent intent = new Intent(this, ProfileActivity.class);
@@ -72,17 +84,13 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
     }
-    /*
-    //When About us button
-    public void buttonOnClick(View v){
-        Intent intent = new Intent(this, AboutActivity.class);
-        startActivity(intent);
-        //do something when the button is clicked
-       // Button button = (Button) v;
-       // startActivity(new Intent(getApplicationContext(), AboutActivity.class));
-    }
-    */
+   // @Override
+    //public void onClick(View view){
+      //  Intent i = new Intent(this, ProfileActivity.class);
+        //startActivity(i);
+    //}
 
 }
